@@ -1,6 +1,8 @@
 rootProject.name = 'planner'
 
 includeBuild 'planner-config'
+includeBuild 'planner-entity'
 includeBuild 'planner-gateway'
 includeBuild 'planner-server'
+includeBuild 'planner-todo'
 
