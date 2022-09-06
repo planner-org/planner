@@ -1,0 +1,6 @@
+rootProject.name = 'planner'
+
+includeBuild 'planner-config'
+includeBuild 'planner-gateway'
+includeBuild 'planner-server'
+
