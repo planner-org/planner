@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "f5d987b6-bd41-45cb-97c4-b165e4bb9adb",
+		"name": "Planner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8757030"
+	},
+	"item": [
+		{
+			"name": "Priority",
+			"item": [
+				{
+					"name": "GetPrioritiesByUserEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/priority/search",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"priority",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPriorityById",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "1",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/priority/id",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"priority",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPriority",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"New priority\",\r\n    \"color\": \"#fff\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/priority/add",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"priority",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePriority",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"qwe\",\r\n    \"color\": \"#qqqq\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/priority/update",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"priority",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePriority",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/priority/delete/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"priority",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "1",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/priority/all",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"priority",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "GetCategoriesByUserEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/category/search",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"category",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategoryById",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "5",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/category/id",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"category",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Bread\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/category/add",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"title\": \"White Bread\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/category/update",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"category",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/category/delete/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"category",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "1",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/category/all",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"category",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
