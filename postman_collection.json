@@ -323,6 +323,32 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "GetStatistic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/stat",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"stat"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
